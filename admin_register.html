@@ -1,0 +1,80 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Admin Registration</title>
+    <style type="text/css">
+    body {
+      background-image: url("/static/home_bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pic{
+      position: absolute;
+      width: 700px;
+      height: 650px;
+      left: 560px;
+      bottom:1px;
+    }
+    .logo{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 5px;
+    top: 3px;
+  	}
+    .text{
+      font-size: 25px;
+      font-family: 'Cabin', sans-serif;
+      color: #3fe0d0;
+    }
+    fieldset{
+      position:absolute;
+      width: 350px;
+      height: 800px;
+      left: 220px;
+      top: 60px;
+      border: 3px solid #3fe0d0 ;
+      border-radius: 15px;
+      margin: 0 auto ;
+      font-size: 18px;
+      font-family: 'Cabin', sans-serif;
+      background-color: white;
+      }
+      
+
+    </style>
+</head>
+<body>
+<div><img src="/static/reg_pic.svg" class="pic" alt="register"></div>
+<div><a href="/"><img src="/static/logo.png" class="logo" alt="logo"></a></div>
+
+<form action="/adminreg" method="post">
+    <fieldset>
+        <a class="text"><b>User Registration</b></a><br><br>
+        <label for="CustomerName" style="align-content: left;">Name</label><br>
+        <input type="text" id="CustomerName" name="CustomerName"><br><br>
+        <label for="email" style="align-content: left;">Email</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="username" style="align-content:left;">Username</label><br>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password" style="align-content: left;">Password</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="confpassword" style="align-content: left;">Confirm Password</label><br>
+        <input type="password" id="confpassword" name="confpassword"><br><br>
+        <label for="plan" style="align-content: left;">Select a Plan</label><br>
+        <input type="text" id="plan" name="plan" value="499"><br><br>
+        <label for="mbnum" style="align-content: left;">Mobile Number</label><br>
+        <input type="text" id="mbnum" name="mbnum"><br><br>
+        <label for="wifiname" style="align-content: left;">Wifi Name</label><br>
+        <input type="text" id="wifiname" name="wifiname"><br><br>
+        <label for="wifipass" style="align-content: left;">Wifi Password</label><br>
+        <input type="text" id="wifipass" name="wifipass"><br><br>
+        <label for="address" style="align-content: left;">Address</label><br>
+        <!--        <input type="text" id="address" name="address"><br><br>-->
+        <textarea type="text" id="address" name="address" rows="5" cols="24" wrap="soft"> </textarea><br><br>
+        <input type="submit" value="Submit"><br><br><br>
+
+    </fieldset>
+</form>
+</body>
+</html>
